@@ -15,4 +15,4 @@ Since the values read from each potentiometer are in the interval [0..1023], the
 ![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%201/SetupPicture.jpeg)
 
 ## Video of setup
-[](https://youtu.be/_b5cnWRgmag)
+![](https://youtu.be/_b5cnWRgmag)
