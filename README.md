@@ -12,4 +12,4 @@ Control a RGB led by using separate potentiometers in controlling each of the co
 Since the values read from each potentiometer are in the interval [0..1023], they need to be mapped to the accepted values by each led which are in the interval [0..255].
 
 ## Picture of setup
-!(https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%201/SetupPicture.jpeg)
+![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%201/SetupPicture.jpeg)
