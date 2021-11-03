@@ -32,4 +32,4 @@ The press of the button launches the sequence: after 10 seconds the light turns 
 ![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%202/setup_picture.jpeg)
 
 ## Video of setup
-[https://youtu.be/_b5cnWRgmag](https://youtu.be/r-LM8WPuFhI)
+[https://youtu.be/_b5cnWRgmag](https://youtu.be/YrKpjJNMoQ4)
