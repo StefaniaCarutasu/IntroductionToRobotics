@@ -33,12 +33,13 @@ int toneDuration = 10;
 //time constants
 const int greenToYellowCars = 10000;
 const int yellowToRedCars = 13000;
-const int buzzingIntervalLong = 13000;
-const int startBlinkInterval = 16000;
-const int greenToRedInterval = 21000;
+const int buzzingInterval = 13000;
+const int startBlinkInterval = 26000;
+const int greenToRedInterval = 31000;
 const int blinkingInterval = 500;
 
 const int buzzingIntervalShort = 100;
+const int buzzingIntervalLong = 500;
 
 
 //timers
@@ -46,7 +47,8 @@ unsigned int buttonTimer = 0;
 unsigned int carsTimer = 0;
 unsigned int peopleTimer = 0;
 unsigned int blinkingTimer = 0;
-unsigned int buzzingTimer = 0;
+unsigned int buzzingTimerLong = 0;
+unsigned int buzzingTimerShort = 0;
 
 int lastDebounceTime = 0;
 const int debounceInterval = 50;
@@ -106,13 +108,17 @@ void peopleSemaphoreLoop() {
       blinkingTimer = millis();
     }
 
-    if(millis() - buzzingTimer > buzzingIntervalShort) {
+    if(millis() - buzzingTimerLong > buzzingIntervalShort) {
       tone(buzzerPin, buzzerTone, toneDuration);
-      buzzingTimer = millis();
+      buzzingTimerLong = millis();
     }
   }
-   else if(millis() - peopleTimer > buzzingIntervalLong) {
-    tone(buzzerPin, buzzerTone, toneDuration);
+   else if(millis() - peopleTimer > buzzingInterval) {
+    if(millis() - buzzingTimerShort > buzzingIntervalLong) {
+      tone(buzzerPin, buzzerTone, toneDuration);
+      buzzingTimerShort = millis();
+    }
+    //tone(buzzerPin, buzzerTone, toneDuration);
     //buzzingTimer = millis();
   }
 }
