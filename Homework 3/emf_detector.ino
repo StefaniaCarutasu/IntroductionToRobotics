@@ -69,22 +69,6 @@ void displayNumber(byte digit) {
 }
 
 void loop() {
-  
-//  if (millis() - elapsedTime >= readingInterval) {
-//    readValue = analogRead(pinAntenna);
-//    Serial.println(readValue);
-//    if(readValue >= 1) { 
-//      readValue = constrain(readValue, 1, maxConstraint);
-//      readValue = map(readValue, 1, maxConstraint, 1, maxDisplayed);
-//      displayNumber(readValue);
-//      
-//    }
-//    else {
-//      displayNumber(readValue);
-//    }
-//
-//    elapsedTime = millis();
-//  }
 
   readValue = analogRead(pinAntenna);
   Serial.println(readValue);
