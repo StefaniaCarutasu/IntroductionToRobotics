@@ -33,3 +33,20 @@ The press of the button launches the sequence: after 10 seconds the light turns 
 
 ## Video of setup
 [https://youtu.be/_b5cnWRgmag](https://youtu.be/YrKpjJNMoQ4)
+
+
+# Homework 3 - EMF Detector
+ 
+## Requirements
+
+Implement a electro-magnetic field detector and display the intensity on a 7-segment display.
+
+## Implementation details
+
+The intensity of the emf is captured with an antenna. The value read is constrained to be in the [0..100] interval, which will then be mapped to values in the [0..9] interval, representing the digits displayed on the 7-segment dispaly. 
+
+## Picture of setup
+![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%203/setup.jpeg)
+
+## Video of setup
+[https://youtu.be/_b5cnWRgmag](https://youtu.be/_6ShBzahU3c)

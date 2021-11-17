@@ -23,9 +23,6 @@ const int buzzerPin = 11;
 int buzzerTone = 0;
 int toneDuration = 10;
 
-//time constant
-const int readingInterval = 500;
-unsigned int elapsedTime = 0;
 
 // store the pins in an array for easier access
 int segments[segSize] = {
