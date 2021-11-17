@@ -65,4 +65,4 @@ A joystick is used to move between the four digits of the 7-segment display. The
 ![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%204/setup_image.jpeg)
 
 ## Video of setup
-[https://youtu.be/NkeoOc0ECe0](https://youtu.be/NkeoOc0ECe0)
+[https://youtu.be/aE9M7RtvbGo](https://youtu.be/aE9M7RtvbGo)
