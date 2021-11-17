@@ -4,13 +4,13 @@ const int pinX = A0; // A0 - analog pin connected to X output
 const int pinY = A1; // A1 - analog pin connected to Y output
 
 // joystick variables
-int switchValue;
 int xValue = 0;
 int yValue = 0;
 
 bool joyMoved = false;
 int minThreshold= 400;
 int maxThreshold= 600;
+
 
 const int dataPin = 12; //DS
 const int latchPin = 11; //STCP
@@ -112,6 +112,7 @@ void checkSw() {
   lastDebounceTime = millis();
 }
 
+// function that helps with changing between the displays
 void checkXValues() {
   if(xValue > maxThreshold && joyMoved == false) {
     joyMoved = true; 
@@ -137,6 +138,7 @@ void checkXValues() {
 
 }
 
+// function that helps with changing the digit on the display
 void checkYValues() {
   if(yValue > maxThreshold && joyMoved == false) {
     joyMoved = true; 
@@ -172,15 +174,23 @@ void writeNumber() {
     
     showDigit(displayDigit); 
 
-    // show a blinking decimal point for the current display
+      
     if (displayDigit == currentDisplay) {
-      if(millis() - blinkTimer > blinkInterval) {
-        writeReg(digitArray[digit] + 1);
-        blinkTimer = millis();
+      // if the display is locked, the point doesn't blink
+      if (!lockDisplay) {
+        // show a blinking decimal point for the current display
+        if(millis() - blinkTimer > blinkInterval) {
+          writeReg(digitArray[digit] + 1);
+          blinkTimer = millis();
+        }
+        else {
+           writeReg(digitArray[digit]);      
+        }
       }
       else {
-         writeReg(digitArray[digit]);      
+        writeReg(digitArray[digit] + 1);
       }
+      
     }
     else {
        writeReg(digitArray[digit]);
