@@ -32,7 +32,7 @@ The press of the button launches the sequence: after 10 seconds the light turns 
 ![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%202/setup_picture.jpeg)
 
 ## Video of setup
-[https://youtu.be/_b5cnWRgmag](https://youtu.be/YrKpjJNMoQ4)
+[https://youtu.be/YrKpjJNMoQ4](https://youtu.be/YrKpjJNMoQ4)
 
 
 # Homework 3 - EMF Detector
@@ -49,4 +49,20 @@ The intensity of the emf is captured with an antenna. The value read is constrai
 ![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%203/setup.jpeg)
 
 ## Video of setup
-[https://youtu.be/_b5cnWRgmag](https://youtu.be/_6ShBzahU3c)
+[https://youtu.be/_6ShBzahU3c](https://youtu.be/_6ShBzahU3c)
+
+# Homework 4 - 4-Digit 7-Segment Display 
+ 
+## Requirements
+
+Using a joystick in setting the values on each digit of a 4-digit 7-segment display connected to a shift register 74hc595. 
+
+## Implementation details
+
+A joystick is used to move between the four digits of the 7-segment display. The decimal point is blinking to indicate the display currently in use. To change the digit on the current display, the button is pressed. My moving the joystick up and down, the digit changes. After setting the digit, the button is pressed again to be able to move between displays. 
+
+## Picture of setup
+![](https://github.com/StefaniaCarutasu/IntroductionToRobotics/blob/main/Homework%204/setup_image.jpeg)
+
+## Video of setup
+[https://youtu.be/NkeoOc0ECe0](https://youtu.be/NkeoOc0ECe0)
